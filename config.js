@@ -5,7 +5,7 @@ window.FIREBASE_CONFIG = {
   projectId: "study-time-management-d4157",
   storageBucket: "study-time-management-d4157.firebasestorage.app",
   messagingSenderId: "237536298573",
-  appId: "1:237536298573:web:4786ba5983315c6c5efe04",
+  appId: "1:237536298573:web:4786ba5983315c6c5efe04"
 };
 
 // Firebase 설정 복사본
