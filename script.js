@@ -1613,14 +1613,14 @@ totalPages = Math.ceil(sorted.length / pageSize);
 
     // CSV 다운로드
     async function downloadCSV(records, filename) {
-      const headers = ['학습일자', '계획시간', '실적시간', '계획누적', '실적누적', '실적%'];
+      const headers = ['학습일자', '계획시간', '계획누적', '실적시간',  '실적누적', '실적%'];
       const csvContent = [
         headers.join(','),
         ...records.map(rec => [
           rec.date,
-          rec.plan,
-          rec.hours,
+          rec.plan,          
           rec.planCumulative,
+          rec.hours,
           rec.hoursCumulative,
           rec.percentage
         ].join(','))
@@ -1657,7 +1657,7 @@ totalPages = Math.ceil(sorted.length / pageSize);
         doc.text(title, titleX, 25);
 
         // 헤더 설정 (영문으로 안정성 확보)
-        const headers = ['Date', 'Plan', 'Actual', 'Plan Cum.', 'Actual Cum.', 'Rate %'];
+        const headers = ['Date', 'Plan',  'Plan Cum.', 'Actual', 'Actual Cum.', 'Rate %'];
         const headerFontSize = 12;
         doc.setFontSize(headerFontSize);
         
@@ -1692,9 +1692,9 @@ totalPages = Math.ceil(sorted.length / pageSize);
           
           const rowData = [
             record.date || '',
-            (record.plan || 0).toString(),
-            (record.hours || 0).toString(),
+            (record.plan || 0).toString(),            
             (record.planCumulative || 0).toString(),
+            (record.hours || 0).toString(),
             (record.hoursCumulative || 0).toString(),
             (record.percentage || 0).toString() + '%'
           ];
