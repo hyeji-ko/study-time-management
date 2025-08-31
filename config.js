@@ -1,11 +1,11 @@
 // Firebase 설정
 window.FIREBASE_CONFIG = {
-  apiKey: "AIzaSyDQEmosR2YJHPQmBMgmFu5hXgQuoGr01Mw",
-  authDomain: "study-4cc66.firebaseapp.com",
-  projectId: "study-4cc66",
-  storageBucket: "study-4cc66.firebasestorage.app",
-  messagingSenderId: "663288812068",
-  appId: "1:663288812068:web:d8a34f4e20ecf654f2beb1"
+  apiKey: "AIzaSyCB85y7HdMcOVl5xKSTupT9tyhBQhRERQY",
+  authDomain: "study-time-management-d4157.firebaseapp.com",
+  projectId: "study-time-management-d4157",
+  storageBucket: "study-time-management-d4157.firebasestorage.app",
+  messagingSenderId: "237536298573",
+  appId: "1:237536298573:web:4786ba5983315c6c5efe04",
 };
 
 // Firebase 설정 복사본
